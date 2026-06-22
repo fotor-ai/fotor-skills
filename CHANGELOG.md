@@ -1,8 +1,12 @@
 # Changelog
 
+## v1.0.22 - 2026-06-22
+- Bump the published skill version to `1.0.22`
+- Fix HappyHorse 1.0 video model IDs to use `happyhorse-1.0-t2v` for text-to-video and `happyhorse-1.0-i2v` for image-to-video.
+
 ## v1.0.21 - 2026-06-22
 - Bump the published skill version to `1.0.21`
-- Add Grok Imagine Video (`grok-imagine-video`) and HappyHorse 1.0 (`happyhorse-1-0`) to the video model references.
+- Add Grok Imagine Video (`grok-imagine-video`) and HappyHorse 1.0 (`happyhorse-1.0-t2v`, `happyhorse-1.0-i2v`) to the video model references.
 
 ## v1.0.20 - 2026-04-28
 - Bump the published skill version to `1.0.20`
