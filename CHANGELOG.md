@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.0.21 - 2026-06-22
+- Bump the published skill version to `1.0.21`
+- Add Grok Imagine Video (`grok-imagine-video`) and HappyHorse 1.0 (`happyhorse-1-0`) to the video model references.
+
 ## v1.0.20 - 2026-04-28
 - Bump the published skill version to `1.0.20`
 - Document Seedance 2.0 (`doubao-seedance-2-0-260128`) 1080p video output support in the video model references and scenario params.
