@@ -17,6 +17,8 @@ Capability columns: **T2V** = Text-to-Video, **I2V** = Single-Image-to-Video,
 | Kling 3.0 | `kling-v3` | Y | Y | Y | - | 3-15s | 720p, 1080p |
 | Kling O1 | `kling-video-o1` | Y | Y | Y | Y | 5s, 10s | 1080p |
 | Kling 2.6 | `kling-v2-6` | Y | Y | - | - | 5s, 10s | 1080p |
+| Grok Imagine Video | `grok-imagine-video` | Y | Y | - | - | 1-15s | 480p, 720p |
+| HappyHorse 1.0 | `happyhorse-1-0` | Y | Y | - | - | 3-15s | 720p, 1080p |
 | Hailuo 02 | `MiniMax-Hailuo-02` | Y | Y | Y | - | 6s | 768p |
 | Hailuo 2.3 Fast | `MiniMax-Hailuo-2.3-Fast` | - | Y | - | - | 6s, 10s | 768p, 1080p |
 | Hailuo 2.3 | `MiniMax-Hailuo-2.3` | Y | Y | - | - | 6s, 10s | 768p, 1080p |
@@ -220,6 +222,43 @@ Capability columns: **T2V** = Text-to-Video, **I2V** = Single-Image-to-Video,
 | Resolution | 1080p |
 | T2V Ratios | 16:9, 1:1, 9:16 |
 | I2V Ratios | 16:9, 1:1, 9:16 |
+
+---
+
+### `grok-imagine-video`
+
+| Constraint | Value |
+|-----------|-------|
+| Image Size Range | Min short side 512px; max long side 2048px |
+| Max Image File Size | 10 MB |
+| Duration | 1s, 2s, 3s, 4s, 5s, 6s, 7s, 8s, 9s, 10s, 11s, 12s, 13s, 14s, 15s |
+| Default Duration | 5s |
+| Resolution | 480p, 720p |
+| Default Resolution | 480p |
+| T2V Ratios | 16:9, 9:16, 1:1, 4:3, 3:4, 3:2, 2:3 |
+| Default T2V Ratio | 16:9 |
+| I2V Ratios | 16:9, 9:16, 1:1, 4:3, 3:4, 3:2, 2:3 |
+| I2V Notes | Output follows source image ratio; omit `aspect_ratio` |
+| Audio Notes | Supports audio and speech prompting when backend audio controls are available |
+
+---
+
+### `happyhorse-1-0`
+
+| Constraint | Value |
+|-----------|-------|
+| Prompt Length | Up to 5000 non-Chinese characters or 2500 Chinese characters |
+| Supported Image Formats | JPEG, JPG, PNG, WEBP |
+| Image Size Range | Width and height must each be at least 300px |
+| Max Image File Size | 10 MB |
+| Input Aspect Ratio Limit | 1:2.5 ~ 2.5:1 |
+| I2V Input Requirement | Exactly 1 `first_frame` image |
+| Duration | 3s - 15s |
+| Resolution | 720p, 1080p |
+| Video Format | MP4 |
+| T2V Ratios | 16:9, 9:16, 1:1, 4:3, 3:4 |
+| I2V Ratios | 16:9, 9:16, 1:1, 4:3, 3:4 |
+| I2V Notes | Approximately follows source image ratio; omit `aspect_ratio` when preserving original composition matters |
 
 ---
 
