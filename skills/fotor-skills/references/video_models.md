@@ -18,7 +18,7 @@ Capability columns: **T2V** = Text-to-Video, **I2V** = Single-Image-to-Video,
 | Kling O1 | `kling-video-o1` | Y | Y | Y | Y | 5s, 10s | 1080p |
 | Kling 2.6 | `kling-v2-6` | Y | Y | - | - | 5s, 10s | 1080p |
 | Grok Imagine Video | `grok-imagine-video` | Y | Y | - | - | 1-15s | 480p, 720p |
-| HappyHorse 1.0 | `happyhorse-1-0` | Y | Y | - | - | 3-15s | 720p, 1080p |
+| HappyHorse 1.0 | T2V: `happyhorse-1.0-t2v` / I2V: `happyhorse-1.0-i2v` | Y | Y | - | - | 3-15s | 720p, 1080p |
 | Hailuo 02 | `MiniMax-Hailuo-02` | Y | Y | Y | - | 6s | 768p |
 | Hailuo 2.3 Fast | `MiniMax-Hailuo-2.3-Fast` | - | Y | - | - | 6s, 10s | 768p, 1080p |
 | Hailuo 2.3 | `MiniMax-Hailuo-2.3` | Y | Y | - | - | 6s, 10s | 768p, 1080p |
@@ -243,7 +243,9 @@ Capability columns: **T2V** = Text-to-Video, **I2V** = Single-Image-to-Video,
 
 ---
 
-### `happyhorse-1-0`
+### HappyHorse 1.0
+
+**model_id by task**: T2V -> `happyhorse-1.0-t2v`, I2V -> `happyhorse-1.0-i2v`
 
 | Constraint | Value |
 |-----------|-------|
